@@ -1,13 +1,16 @@
 body p{
   font-family: Arial, Helvetica, sans-serif;
 }
-body li{
+/* a:hover{
+  color: #FF8400;
+  border-bottom: 1px solid #FF8400;
+} */
+/* body li{
   font-family: 'Courier New', Courier, monospace;
-}
+} */
 
 
-#navbar-section{
-    
+ #navbar-section{
     background-color: #0066FF;
 }
 #navbar-section img{
@@ -37,6 +40,7 @@ body li{
     outline: none;
     box-shadow: none;
 }
+
 
 @media (max-width: 768px) {
     .navbar-nav .nav-link {
@@ -91,7 +95,7 @@ body li{
     color: white;
 }
 
-.header-section .lead {
+.header-section .lead{
     font-family: Trebuchet MS, sans-serif;
     color: white;
     font-size: 1.25rem;
@@ -399,6 +403,9 @@ body li{
     /* justify-content: center; */
     width: 90%;
 }
+#ai-section .main-cards{
+  margin-top: -120px;
+}
 #ai-section .card-text{
   text-align: start;
   font-size: 14px;
@@ -408,6 +415,9 @@ body li{
   margin-top: -52px;
 }
 @media (max-width: 768px) {
+  #ai-section .main-cards{
+    margin-top: 0px;
+  }
   #ai-section .card {
     margin-top: 5px;
     padding: 0px;
@@ -444,11 +454,14 @@ body li{
   font-family: Poppins ,sans-serif;
   font-weight: 800;
 }
-#earn-section .col-lg-12 span{
+#earn-section  .hd-2{
   font-size: 50px;
   font-family: Poppins ,sans-serif;
   font-weight: 900;
   color: #202726;
+}
+#earn-section .earn-card h5{
+  margin-top: 371px;
 }
 #earn-section .earn-card1{
   color: white;
@@ -476,7 +489,7 @@ body li{
 }
 #earn-section .col-md-4 h5,span{
   padding-left: 0px;
-    margin-top: 356px;
+    /* margin-top: 356px; */
 }
 
 #Aisection .ai-ul1 {
@@ -485,9 +498,11 @@ body li{
   display: flex;
 }
 #Aisection .ai-ul1 li {
-  padding: 5px;
-  border: 1px solid;
-  border-radius: 68px;
+  background-color: transparent;
+    padding: 23px;
+    border: 1px solid;
+    border-radius: 68px;
+    font-size: 23px;
 }
 #Aisection h2{
   text-align: start;
@@ -506,20 +521,27 @@ body li{
   text-align: start;
   font-weight: 700;
 }
-#Aisection .main-ai{
+#Aisection {
   margin-top: 20px;
   padding: 14px;
   border-radius: 34px;
   background-color: #CADFFF;
 }
 
+
 @media (max-width: 768px) {
   #Aisection .ai-ul1{
     display: none;
   }
+  #Aisection .img1{
+    margin-top: 0px;
+  }
   #earn-section .earn-card1{
     height: 300px;
     margin-top: 5px;
+  }
+  #earn-section .earn-card h5{
+    margin-top: 10px;
   }
   #earn-section .earn-card2{
     height: 300px;
@@ -564,6 +586,16 @@ body li{
   #footer-section i{
     color: white;
   }
+  #footer-section a{
+    font-family: 'Courier New', Courier, monospace;
+  }
+  #footer-section a:hover{
+    color: #FF8400;
+  }
+  #footer-section .links a:hover{
+    color: #FF8400;
+    border-bottom: 1px solid #FF8400;
+  }
 
   #footer-section .links{
     list-style: none;
@@ -605,6 +637,9 @@ body li{
   color: #565656;
   box-shadow: 1px 0px 10px #565656;
 }
+#footer-section .cont{
+  margin-left: 84px;
+}
 
 /* #footer-section .faq-gb{
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, #737373 100%);
@@ -614,7 +649,9 @@ body li{
 
 @media (max-width: 768px) {
   
-
+  #footer-section .cont{
+    margin-left: 0px;
+  }
   #footer-section .social-icons{
     font-size: 20px;
     margin-left: -28px;
